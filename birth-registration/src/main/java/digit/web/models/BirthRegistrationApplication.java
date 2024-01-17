@@ -44,7 +44,7 @@ public class BirthRegistrationApplication   {
         @JsonProperty("applicationNumber")
         private String applicationNumber = null;
 
-        @NotNull(message = "Name cannot be null")
+        @NotBlank(message = "First Name cannot be empty")
         @JsonProperty("babyFirstName")
         private String babyFirstName = null;
 
